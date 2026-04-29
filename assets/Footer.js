@@ -1,0 +1,1 @@
+import{j as c,a3 as a,L as l}from"./index.js";const i="_host_1yifu_1",f={host:i},x=({children:t,className:s,Component:o="footer",role:e,...n})=>{const r=e??(o==="footer"?"contentinfo":void 0);return c.jsx(a,{Component:o,role:r,align:"center",...n,className:l(f.host,s),children:t})};export{x as F};
