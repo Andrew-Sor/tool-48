@@ -1,0 +1,1 @@
+import{j as s,K as r}from"./index.js";import{D as l}from"./constants.js";const n="_host_1no0z_1",c="_placeholder_1no0z_6",o={host:n,placeholder:c},p=({children:e,gap:t=0,...a})=>s.jsxs(r,{role:"list",baseClassName:o.host,baseStyle:{gridGap:t},...a,children:[e,s.jsx("div",{"aria-hidden":!0,...l,className:o.placeholder})]});export{p as L};

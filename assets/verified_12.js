@@ -1,0 +1,1 @@
+import{j as i,S as r}from"./index.js";const e=o=>i.jsx(r,{viewBox:"0 0 16 16",width:16,height:16,vkuiIconId:"verified_12",vkuiAttrs:{fill:"none"},vkuiProps:o,children:i.jsx("path",{fill:"currentColor",d:"M4.5 9.586 2.957 8.043a1 1 0 0 0-1.414 1.414l2.25 2.25a1 1 0 0 0 1.414 0l5.25-5.25a1 1 0 0 0-1.414-1.414z"})});export{e as I};
