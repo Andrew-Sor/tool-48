@@ -1,0 +1,58 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+  "manifest_version": 3,
+  "name": "Tool 42",
+  "short_name": "Tool 42",
+  "version": "3.5.0",
+  "description": "Инструмент для анализа, поиска и управления данными ВКонтакте: друзья, группы, лайки, комментарии, истории, фото и другие сценарии.",
+  "action": {
+    "default_title": "Tool 42"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "tabs",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://hro.sh/tool42/*",
+    "https://mc.yandex.ru/*",
+    "https://*.vk.ru/*",
+    "https://*.vk.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://vk.ru/*",
+        "https://*.vk.ru/*",
+        "https://vk.com/*",
+        "https://*.vk.com/*"
+      ],
+      "js": [
+        "vk-content-bridge.js"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "vk-page-bridge.js"
+      ],
+      "matches": [
+        "https://vk.ru/*",
+        "https://*.vk.ru/*",
+        "https://vk.com/*",
+        "https://*.vk.com/*"
+      ]
+    }
+  ],
+  "icons": {
+    "16": "logo192.png",
+    "32": "logo192.png",
+    "48": "logo192.png",
+    "128": "logo512.png"
+  }
+}
